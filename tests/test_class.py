@@ -74,6 +74,9 @@ class TestUtilityFunction:
     def test_split_words_with_numbers(self):
         assert ['upper', 'lower'] == split_words('upper2lower')
 
+    def test_split_words_with_camel_case_single_letter(self):
+        assert ['A', 'Fair', 'Market'] == split_words('AFairMarket')
+
     def test_split_words_with_camel_case(self):
         assert ['one', 'Two', 'Three'] == split_words('oneTwoThree')
         assert ['one', 'Two', 'Three', 'Four'] == split_words(

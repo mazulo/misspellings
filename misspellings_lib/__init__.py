@@ -16,7 +16,7 @@ import string
 __version__ = '1.0.5'
 
 
-_NORM_REGEX = re.compile(r'(?<=[a-z])(?=[A-Z])')
+_NORM_REGEX = re.compile(r'(?<=[a-z])?(?=[A-Z])')
 _WORD_REGEX = re.compile(r'[\s_0-9\W]+', flags=re.UNICODE)
 
 
